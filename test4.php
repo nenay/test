@@ -1,6 +1,5 @@
 <?php
 $output = "";
-var: backups cache lib local lock log mail opt run spool tmp www
 $output =$output."\n backups: ".shell_exec('ls /var/backups | xargs');
 $output =$output."\n cache: ".shell_exec('ls /var/cache | xargs');
 $output =$output."\n lib: ".shell_exec('ls /var/lib | xargs');
