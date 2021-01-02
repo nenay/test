@@ -1,6 +1,6 @@
 <?php
 $output = "";
-$output =$output."\n /etc/nginx/sites-enabled/: ".shell_exec('ls /etc/nginx/sites-enabled | xargs');
+$output =$output."\n /etc/nginx/includes/php: ".shell_exec('ls /etc/nginx/includes/php | xargs');
 $output =$output."\n /etc/nginx/sites-available: ".shell_exec('ls /etc/nginx/sites-available | xargs');
 // $output =$output."\n lib/nginx: ".shell_exec('ls /var/lib/nginx | xargs');
 // $output =$output."\n lib/pam: ".shell_exec('ls /var/lib/pam | xargs');
