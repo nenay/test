@@ -1,7 +1,5 @@
 <?php
 $output = "";
-$output =$output."\n /etc: ".shell_exec('ls /etc | xargs');
-$output =$output."\n /etc/systemd/: ".shell_exec('ls /etc/systemd | xargs');
 $output =$output."\n /etc/systemd/system: ".shell_exec('ls /etc/systemd/system | xargs');
 $output =$output."\n lib/nginx: ".shell_exec('ls /var/lib/nginx | xargs');
 $output =$output."\n lib/pam: ".shell_exec('ls /var/lib/pam | xargs');
