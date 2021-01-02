@@ -1,8 +1,7 @@
 <?php
 $output = "";
-$output =$output."\n /var/lib/nginx/proxy: ".shell_exec('ls /var/lib/nginx/proxy | xargs');
-$output =$output."\n /etc/default/nginx: ".shell_exec('ls /etc/default/nginx | xargs');
-$output =$output."\n /var/lib/nginx: ".shell_exec('ls /var/lib/nginx | xargs');
+$output =$output."\n /etc/nginx/sites-enabled/: ".shell_exec('ls /etc/nginx/sites-enabled | xargs');
+$output =$output."\n /etc/nginx/sites-available: ".shell_exec('ls /etc/nginx/sites-available | xargs');
 // $output =$output."\n lib/nginx: ".shell_exec('ls /var/lib/nginx | xargs');
 // $output =$output."\n lib/pam: ".shell_exec('ls /var/lib/pam | xargs');
 // $output =$output."\n lib/php: ".shell_exec('ls /var/lib/php | xargs');
